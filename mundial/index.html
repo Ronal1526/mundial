@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="./CSS/style.css">
+  <title>Tabla de definiciones</title>
+  <script src="./js/script.js" defer></script>
+</head>
+
+<body>
+  <section class="container">
+    <div class="image"></div>
+    <section>
+      <fieldset>
+        <legend>Partidos Grupo A</legend>
+        <form  id="formScore" action="#" class="" style="width: 38rem;">
+          <div class="row">
+            <div class="mb-3 col">
+              <label for="exampleInputPassword1" class="form-label">Equipo A</label>
+              <select class="form-select" name="equipo1" id="">
+                <option value="Qatar">Qatar</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Paises Bajos">Paises Bajos</option>
+              </select>
+            </div>
+
+            <div class="mb-3 col">
+              <label for="exampleInputPassword1" class="form-label">Equipo B</label>
+              <select class="form-select" name="equipo2" id="">
+                <option value="Qatar">Qatar</option>
+                <option value="Ecuador">Ecuador</option>
+                <option value="Senegal">Senegal</option>
+                <option value="Paises Bajos">Paises Bajos</option>
+              </select>
+            </div>
+
+          </div>
+
+          <div class="row">
+
+            <div class="mb-2 col">
+              <label for="exampleInputPassword1" class="form-label">GOLES</label>
+              <input name="gol1" type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+
+            <div class="mb-2 col">
+              <label for="exampleInputPassword1" class="form-label">GOLES</label>
+              <input name="gol2" type="number" class="form-control" id="exampleInputPassword1">
+            </div>
+
+          </div>
+          <button type="submit" class="btn btn-dark">
+            Marcar
+          </button>
+        </form>
+      </fieldset>
+    </section>
+    <br>
+    <br>
+    <br>
+    <section class="ml-1">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Equipo</th>
+            <th>goles a favor</th>
+            <th>Partidos ganados</th>
+            <th>Partidos perdidos</th>
+            <th>Partidos empatados</th>
+            <th>Puntos</th>
+          </tr>
+        </thead>
+        <tbody id="tabla">
+          
+        </tbody>
+      </table>
+      <button id="delete" type="button" class="btn btn-danger">Eliminar</button>
+    </section>
+    <br>
+    <br>
+    <br>
+  </section>
+</body>
+
+</html>
